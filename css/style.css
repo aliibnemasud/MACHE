@@ -13,7 +13,7 @@ body {
     background: url(../img/banner-bg.png);
     background-position: center;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 .shape {
@@ -130,6 +130,10 @@ transform: translate(-50%, -50%);
 
 /*services section*/
 
+.i-line {
+    padding: 25px;
+}
+
 .service .s-icon {}
 .service h5, .prices h5 {
     font-size: 18px;
@@ -227,7 +231,7 @@ transform: translate(-50%, -50%);
     display: inline-block;
     position: absolute;
     top: -10%;
-    right: 18%;
+    right: 13%;
 }
 .prices .card-body .buy-now {
     padding: 12px 50px;
@@ -430,7 +434,7 @@ transform: translate(-50%, -50%);
 
 
 
-/*responsive*/
+/*responsive-------------------------------------------------------------*/
 
 
 
