@@ -13,7 +13,7 @@ body {
     background: url(../img/banner-bg.png);
     background-position: center;
     background-size: cover;
-    height: 100vh
+    min-height: 80vh;
 }
 
 .shape {
@@ -31,6 +31,7 @@ body {
 .nav-link:hover {
     color: #ed145b !important;
 }
+
 .hero-area {
     position: relative;
 }
@@ -57,26 +58,30 @@ body {
     margin: 0 auto;
     margin-bottom: 30px;
 }
-.show {
+.btn-cta{
     background: #ed145b;
     color: #fff !important;
-    display: block;
-    width: 24%;
-    margin: 0 auto;
-    margin-top: 5%;
-    padding: 15px 20px;
+    margin-top: 3%;
+    padding: 14px 60px;
     border-radius: 40px;
-    font-size: 17px;
+    font-size: 16px;
 }
 
-.show:hover {
+.btn-cta:hover {
     background: transparent;
     border: 1px solid #ed145b;
 }
 
 
 .banner-contant {
-    margin-top: 8%;
+    
+position: absolute;
+    
+top: 50%;
+    
+left: 50%;
+    
+transform: translate(-50%, -50%);
 }
 
 /*blog section*/
@@ -117,9 +122,9 @@ body {
 }
 .laptop {
     position: absolute;
-    right: 0;
-    width: 54%;
-    top: 20%;
+    right: 1%;
+    width: 44%;
+    bottom: -18%;
 }
 
 
@@ -162,22 +167,16 @@ body {
 
 /*testimonal section*/
 
-.testimonal {
-    background: url(../img/testimonal-bg.png);
-    background-size: cover;
-    background-position: center;
-    height: 55vh;
-    padding: 5%;
+.carousel-text {margin-bottom: 0;padding: 18px 0 !important;}
+.carousel-item {
+    position: relative;
 }
-.testimonal p {
-    color: #fff;
-    font-size: 17px;
-    padding: 3px 20% !important;
-    line-height: 2;
-    font-weight: 300;
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.testimonal img {width: 5%;margin: 0 auto;}
-.testimonal {}
 
 
 /*prices section*/
@@ -214,34 +213,32 @@ body {
     background: #ed145b;    
 }
 .prices .card-body {
-    background: #fff;
-    text-align: center;
+    background: #fff;    
     position: relative;
     transition: .5s;
 }
 
-.prices .card-body .standard {
+.prices .card-body h6 {
     background: #f4f4f4;
     color: #5a5a5a;
-    padding: 12px 50px;
+    padding: 15px 50px;
     border-radius: 25px;
-    position: absolute;
-    top: -9%;
-    left: 16%;
     font-weight: 700;
+    display: inline-block;
+    position: absolute;
+    top: -10%;
+    right: 18%;
 }
 .prices .card-body .buy-now {
-    background: #ed145b;
-    color: #fff;
     padding: 12px 50px;
     border-radius: 25px;
     transition: .5s;
+    border: 1px solid #ed145b;
 }
 
 .prices .card-body .buy-now:hover {
-    background: none;
-    border: 1px solid #ed145b;
-    color: #5a5a5a;  
+    color: #fff;
+    background: #ed145b;
 }
 
 /*i-service services*/
@@ -347,18 +344,18 @@ body {
     padding: 0 10%;
 }
 
-.portfolio .show {
+.portfolio .btn-cta {
     background: none;
     color: #ed145b !important;
     text-transform: uppercase;
     font-size: 16px;
     transition: .5s;
+    width: 20%;
+    margin: 0 auto;
+    display: block;
 }
 
-.portfolio .show:hover {
-    margin-bottom: 21px !important;
-    border: none;
-}
+
 
 /*bag-3 section*/
 
@@ -366,7 +363,6 @@ body {
     background: url(../img/background-3.png);
     background-position: center;
     background-size: cover;
-    height: 70vh;
     padding: 7%;
 }
 .bag-3 h1 {
@@ -560,9 +556,7 @@ body {
     transition: .5s;
 }
 
-.prices .card-body .standard {
-    left: 34%;
-}
+
 .prices .card-body .buy-now {
     background: #ed145b;
     color: #fff;
@@ -578,10 +572,8 @@ body {
 }
 
 
-.i-line {
-    padding: 20px;
-}
 
+.gap {}
 
 /*newslatter section*/
 
@@ -667,10 +659,7 @@ margin-left: 32%;
 .hero-area .line {
     margin-bottom: 20px;
 }
-.show {
-    width: 30%;
-    font-size: 12px;
-}
+
 
 .shape {
     margin-top: 44%;
@@ -860,10 +849,7 @@ margin-left: 31%;
 .hero-area .line {
     margin-bottom: 20px;
 }
-.show {
-    width: 30%;
-    font-size: 12px;
-}
+
 
 .shape {
     margin-top: 28%;
@@ -935,6 +921,8 @@ margin-left: 31%;
 .testimonal {
     height: 32vh;
 }
+
+
 
 /*card section*/
 
@@ -1035,9 +1023,7 @@ font-size: 10px;
 
 
 }
-.shape {
-    margin-top: 22%;
-}
+.shape {position: absolute;bottom: -5%;}
 
 
 }
